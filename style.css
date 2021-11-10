@@ -1,0 +1,125 @@
+* {
+     
+      box-sizing: border-box;
+      font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    
+    }
+
+html { scroll-behavior: smooth;
+ 
+}
+
+body { 
+       
+       margin: 0;
+       padding: 0;
+
+     }
+
+
+     
+img { width: 100%;}
+
+.containerOne {
+        
+        width: 50%;
+        max-width:750px;
+        margin: 4em 4em;
+        padding: .5em;
+
+           }
+
+.container2 {
+  display:flex;
+ justify-content: space-evenly;
+ margin: 4em 4em;
+ padding: 1em;
+
+
+
+}
+
+.container3 {
+  background-color: #57BC90;
+  color:rgba(255,255,255, .7);
+  display:flex;
+ 
+  justify-content: space-evenly;
+
+  padding:5em 5em;
+
+}
+
+.col + .col { margin-left: 1.2em;}
+
+.col {   width: 100%; text-align: center; max-width: 750px;}
+
+.title {
+
+       font-size:2.2rem;
+       color:#125049;
+      
+      }
+
+.title2 { color:#125049;
+         
+           }
+
+a:link {   text-decoration: none;
+}
+
+               
+
+.sectionOne {
+          background-image:linear-gradient(to left ,#77C9D4 ,#57BC90);
+          color: rgba(255,255,255,.7);
+          padding: 1em;
+          
+        }
+
+.buttons { 
+
+           
+            margin-top:1.5em;
+            padding:.5em 1em;
+            border:1px solid #ffffff;
+            border-radius: 31.5px;
+            opacity: .7;
+            transition: all .2s ease;
+            cursor: pointer;
+            outline: none;
+            background-color:transparent; 
+            color: #ffffff;
+            font-size: 0.9rem;
+              
+            }
+
+.buttons:hover {
+       
+           opacity:1;
+           background-color:#ffffff; 
+           color:#77C9D4;
+           
+               }
+
+.buttons span {  
+  
+           transition: all .2s ease;
+          
+              }
+
+.buttons:hover span{
+
+               padding-left: .8em;
+               
+
+                   }
+
+@media ( max-width:650px){
+
+  .container2 {flex-direction: column;}
+  .container3 {flex-direction: column;}
+  .col + .col { margin-left: 0;}
+
+.col {  text-align:left; }
+}
